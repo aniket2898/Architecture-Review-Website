@@ -1,0 +1,106 @@
+body{
+	font-family: 'Noto Sans';
+}
+h3{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#author-con{
+    width:100%;
+    height: 100%;
+}
+
+#author-pic{
+    width:25%;
+    height: 300px;
+    float:left;
+    margin: 20px 0 50px 5%;
+    overflow: hidden;   
+}
+
+#author-pic img{
+    width:auto;
+    height: 100%;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+#author-desp{
+    width:60%;
+    height: 300px;
+    float:left;
+    margin: 20px 5% 30px 5%;
+    padding: 2px 2px 2px 2px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#auth-project{
+    width:98%;
+    height:fit-content;
+	float: left;
+    margin: 0 1% 50px 1%;
+    text-align: center;
+}
+
+#auth-review{
+    width:98%;
+    height:300px;
+    float: left;
+    margin: 0 1% 50px 1%;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+  
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 98%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: 0 1% 2px 1%;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+@media only screen and (max-width: 920px){
+    #author-pic{
+        width:100%;
+        margin: 0;
+    }
+    #author-pic img{
+        display: block;
+        margin: 0 auto 0 auto;
+    }
+    #author-desp{
+        width: 98%;
+        margin: 20px 1% 50px 1%;
+    }
+}

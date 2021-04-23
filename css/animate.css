@@ -1,0 +1,94 @@
+.topdiv{
+    animation-name: topdiv;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.toprow{
+    animation-name: toprow;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.botdiv{
+    animation-name: botdiv;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.revtopdiv{
+    animation-name: revtopdiv;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.revbotdiv{
+    animation-name: revbotdiv;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.revtoprow{
+    animation-name: revtoprow;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes topdiv{
+    from{
+        height:100px;
+    }
+    to{
+        height:50%;
+    }
+}
+
+@keyframes toprow{
+    from{
+        top:0%;
+    }
+    to{
+        top:70%
+    }
+}
+
+@keyframes botdiv{
+    from{
+        height:50px;
+    }
+    to{
+        height:50%;
+    }
+}
+
+@keyframes revtopdiv{
+    from{
+        height:50%;
+    }
+    to{
+        height:100px;
+    }
+}
+
+@keyframes revbotdiv{
+    from{
+        height:50%;
+    }
+    to{
+        height:50px;
+    }
+}
+@keyframes revtoprow{
+    from{
+        top:70%;
+    }
+    to{
+        top:0%;
+    }
+}

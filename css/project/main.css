@@ -1,0 +1,134 @@
+/*---------- GENERAL STYLE CLASS -------------*/
+body{
+	font-family: 'Noto Sans';
+}
+.rows{
+    margin: 0 0 50px 0;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:'Noto Sans';
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+h3{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/*------------ STYLE CLASS FOR TOP PIC DIV -----------*/
+#top-pic-con{
+    position: relative;
+    width:100%;
+    height:300px;
+}
+
+#parallax-bg{
+    width:100%;
+    height:100%;
+    filter:blur(4px);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    width:100%;
+    color:white;
+    background-attachment:fixed;
+}
+
+#overlay{
+    position: absolute;
+    width:100%;
+    height:300px;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.3);
+}
+
+#top-pic-con .content{
+    width:100%;
+    height:300px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+/*--------- STYLE CLASS FOR BREIF SEGMENT ---------*/
+#breif-con{
+    position: relative;
+    width:100%;
+    height: 300px;
+}
+
+#breif-con .content{
+    width:100%;
+    height:280px;
+    margin: 10px 0 10px 0;
+    color:black;
+    font-size: 1rem;
+}
+
+/*--------- STYLE CLASS FOR REVIEW SEGMENT ---------*/
+#review-con{
+    width:100%;
+    height: fit-content;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 98%;
+    text-align: left;
+    border: none;
+    outline: none;
+	transition: 0.4s;
+	margin: 0 1% 2px 1%;
+}
+  
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/*--------- STYLE CLASS FOR MAP SEGMENT ---------*/
+#map-con{
+    width:98%;
+    height:300px;
+    margin-bottom: 50px;
+    margin: 0 1% 0 1%;
+}
+#map-con #map{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+}

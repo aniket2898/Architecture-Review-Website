@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+}
+
+body{
+    padding:100px 0 50px 0;
+    overflow-x: hidden;
+    background-color: grey
+}
+
+/*------------ CSS PROPERTIES OF HEADER --------------*/
+#header{
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color:white;
+    height: 100px;
+    font-size:125%;
+    z-index:100;
+    overflow: hidden;
+    line-height: 70px;
+}
+
+#hrow{
+    position: relative;
+    width:fit-content;
+    height:70px;
+    font-size: 150%;
+    margin:15px auto 15px auto;
+    z-index:100;
+}
+
+#hrow div div{
+    float:left;
+    
+}
+
+#logo{
+    height:70px;
+    padding-left:2px;
+    padding-right:2px;
+}
+
+/*---------------- CSS PROPERTIES OF FOOTER ----------------*/
+#footer{
+    width:100%;
+    position: fixed;
+    height:50px;
+    left:0;
+    bottom:0;
+    z-index:99;
+    background-color:white;
+}
+#frow{
+    width: fit-content;
+    height:25px;
+    margin:12px auto 12px auto;
+    display:none;
+    transition: display 1s ease-in;
+}
+.flink{
+    float:left;
+    margin:0 15px 0 15px;
+}
+a{
+    color:black;
+    text-decoration: none;
+    line-height: 25px;
+}
+a:hover{
+    text-decoration: none;
+    color:grey;
+}
+.ahover{
+    color:black;
+    font-size: 110%;
+}
+
+/*---------- RESPONSIVE PROPERTIES OF HEADER AND FOOTER ----------*/
+@media only screen and (max-width: 500px) {
+    #header{
+        font-size:120%;
+    }
+}
